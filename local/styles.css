@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fdfd96;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* 轻微调整阴影 */
+    width: 100%;
+    max-width: 300px; /* 使容器在小屏幕上更具响应性 */
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    flex-grow: 1; /* 允许输入框在可用空间内自动扩展 */
+    margin-right: 10px; /* 避免输入框和按钮之间没有间隔 */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #50b3a2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s; /* 添加变换动画 */
+}
+
+button:hover {
+    background-color: #33826b;
+    transform: scale(1.1); /* 轻微放大按钮 */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ffebcd;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* 添加颜色变换动画 */
+}
+
+li:hover {
+    background-color: #ddd;
+}
+
+li.done {
+    text-decoration: line-through;
+    color: #888;
+}
+
+#storageBoxId {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
